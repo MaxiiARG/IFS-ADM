@@ -1,0 +1,3 @@
+\033[1;32mGRACIAS POR USAR IFS-ADM
+\033[0;34m======================================================
+\033[1;33m ESTAS USANDO LA ULTIMA VERSION! a7.0
