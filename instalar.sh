@@ -143,7 +143,7 @@ wget -O /usr/bin/trans https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master
 msg -bar2
 msg -bar2
 msg -bar2
-msg -e \e[34m "[ IFS | ADM | 2019 ]\e[0m"
+msg "\e[34m [ IFS | ADM | 2019 ]\e[0m"
 [[ $1 = "" ]] && funcao_idioma || {
 [[ ${#1} -gt 2 ]] && funcao_idioma || id="$1"
  }
