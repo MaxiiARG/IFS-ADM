@@ -141,9 +141,10 @@ chmod +x ${ARQ}/$1
 fun_ip
 wget -O /usr/bin/trans https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Install/trans &> /dev/null
 msg -bar2
-msg 
-msg echo -e "\e[30mINSTALANDO PANEL ADMINISTRATIVO\e[0m"
-msg -bra "\e[34m [ IFS - ADM | 2019 ]\e[0m"
+msg -bra ""
+msg -mag "\e[30mINSTALANDO PANEL ADMINISTRATIVO\e[0m"
+msg -bra " [ IFS - ADM | 2019 ] "
+msg -bar2
 [[ $1 = "" ]] && funcao_idioma || {
 [[ ${#1} -gt 2 ]] && funcao_idioma || id="$1"
  }
