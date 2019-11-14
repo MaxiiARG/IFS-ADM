@@ -143,7 +143,7 @@ wget -O /usr/bin/trans https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master
 msg -bar2
 msg -bar2
 msg -bar2
-msg -verm "[ IFS | ADM | 2019 ]"
+msg -e \e[34m "[ IFS | ADM | 2019 ]\e[0m"
 [[ $1 = "" ]] && funcao_idioma || {
 [[ ${#1} -gt 2 ]] && funcao_idioma || id="$1"
  }
@@ -162,7 +162,7 @@ REQUEST=$(echo $SCPresq|$SUB_DOM)
 IP="167.114.28.140" && echo "$IP" > /usr/bin/vendor_code
 cd $HOME
 msg -ne "Key: "
-wget -O $HOME/lista-arq ${REQUEST}/lista-arq > /dev/null 2>&1 && echo -e "\033[1;32m Verified" || {
+wget -O $HOME/lista-arq ${REQUEST}/lista-arq > /dev/null 2>&1 && echo -e "\033[1;32m Verificado" || {
    echo -e "\033[1;32m Verificado"
    invalid_key
    exit
