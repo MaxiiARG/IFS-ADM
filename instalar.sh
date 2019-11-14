@@ -21,8 +21,8 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
   -azu)cor="${MAG}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -verd)cor="${VERDE}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -bra)cor="${BRAN}${NEGRITO}" && echo -ne "${cor}${2}${SEMCOR}";;
-  -bar2)cor="${AZUL}${NEGRITO}======================================================" && echo -e "${cor}${SEMCOR}";;
-  -bar)cor="${AZUL}${NEGRITO}========================================" && echo -e "${cor}${SEMCOR}";;
+  -bar2)cor="${AMARELO}======================================================" && echo -e "${cor}${SEMCOR}";;
+  -bar)cor="${AMARELO}========================================" && echo -e "${cor}${SEMCOR}";;
  esac
 }
 fun_ip () {
@@ -92,8 +92,8 @@ pv="$(echo ${idioma[$selection]}|cut -d' ' -f1)"
 byinst="true"
 }
 install_fim () {
-msg -ama "$(source trans -b pt:${id} "Instalacao Completa, Utilize os Comandos"|sed -e 's/[^a-z -]//ig')" && msg bar2
-echo -e " menu / adm"
+msg -ama "$(source trans -b pt:${id} "INSTALACION COMPLETA, UTILIZE LOS COMANDOS"|sed -e 's/[^a-z -]//ig')" && msg bar2
+echo -e " MENU / ADM PARA ABRIR EL MENU DE ADMINISTRACION"
 msg -bar2
 }
 ofus () {
@@ -146,7 +146,7 @@ msg -verm "[ IFS | ADM | 2019 ]"
 [[ ${#1} -gt 2 ]] && funcao_idioma || id="$1"
  }
 error_fun () {
-msg -bar2 && msg -verm "$(source trans -b pt:${id} "Esta Chave Era de Outro Servidor Portanto Foi Excluida"|sed -e 's/[^a-z -]//ig') " && msg -bar2
+msg -bar2 && msg -verm "$(source trans -b pt:${id} "Esta clave era de otro servidor, por lo cual fue removida"|sed -e 's/[^a-z -]//ig') " && msg -bar2
 [[ -d ${SCPinstal} ]] && rm -rf ${SCPinstal}
 exit 1
 }
@@ -169,10 +169,10 @@ sleep 1s
 updatedb
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
    msg -bar2
-   msg -ama "$(source trans -b pt:${id} "BEM VINDO, OBRIGADO POR UTILIZAR"|sed -e 's/[^a-z -]//ig'): \033[1;31m[NEW-ULTIMATE]"
+   msg -ama "$(source trans -b pt:${id} "BIENVENIDO USUARI@, GRACIAS POR UTILIZAR NUESTRO PANEL ADMINISTRATIVO"|sed -e 's/[^a-z -]//ig'): \033[1;31m[IFS-ADM]"
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
    pontos="."
-   stopping="$(source trans -b pt:${id} "Verificando Atualizacoes"|sed -e 's/[^a-z -]//ig')"
+   stopping="$(source trans -b pt:${id} "Verificando actualizaciones"|sed -e 's/[^a-z -]//ig')"
    for arqx in $(cat $HOME/lista-arq); do
    msg -verm "${stopping}${pontos}"
    wget -O ${SCPinstal}/${arqx} ${REQUEST}/${arqx} > /dev/null 2>&1 && verificar_arq "${arqx}" || error_fun
