@@ -170,7 +170,7 @@ sleep 1s
 updatedb
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
    msg -bar2
-   msg -sincolor "$(source trans -b pt:${id} " \e[1;31mBIENVENIDO USUARIO, GRACIAS POR UTILIZAR NUESTRO PANEL ADMINISTRATIVO "|sed -e 's/[^a-z -]//ig'): \e[44m[IFS-ADM]\e[0m "
+   msg -ama "$(source trans -b pt:${id} " -ne BIENVENIDO USUARIO, GRACIAS POR UTILIZAR NUESTRO PANEL ADMINISTRATIVO "|sed -e 's/[^a-z -]//ig'): \e[44m[IFS-ADM]\e[0m "
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
    pontos="."
    stopping="$(source trans -b pt:${id} "Verificando actualizaciones"|sed -e 's/[^a-z -]//ig')"
