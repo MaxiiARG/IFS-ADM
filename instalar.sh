@@ -85,7 +85,7 @@ done
 msg -bar2
 unset selection
 while [[ ${selection} != @([1-8]) ]]; do
-echo -ne "\033[1;37mSELECCIONAR: " && read selection
+echo -ne "\e[45mSELECCIONAR IDIOMA: " && read selection
 tput cuu1 && tput dl1
 done
 pv="$(echo ${idioma[$selection]}|cut -d' ' -f1)"
@@ -94,7 +94,7 @@ byinst="true"
 }
 install_fim () {
 msg -ama "$(source trans -b pt:${id} "INSTALACION COMPLETA, UTILIZE LOS COMANDOS"|sed -e 's/[^a-z -]//ig')" && msg bar2
-echo -e "\e[33mMENU / ADM \e[32mPARA ABRIR EL PANEL ADMINISTRATIVO"
+echo -e "\e[33mMENU / ADM \e[93mPARA ABRIR EL PANEL ADMINISTRATIVO"
 msg -bar2
 }
 ofus () {
