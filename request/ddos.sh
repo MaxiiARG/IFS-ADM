@@ -59,7 +59,7 @@ else
 	mkdir /usr/local/ddos
 fi
 fun_bar "service ssh restart" "service squid3 restart"
-wget -q -O /usr/local/ddos/ddos.conf https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Install/ddos.conf -o /dev/null
+wget -q -O /usr/local/ddos/ddos.conf https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Install/ddos.conf -o /dev/null
 wget -q -O /usr/local/ddos/ddos.conf http://www.inetbase.com/scripts/ddos/ddos.conf -o /dev/null
 wget -q -O /usr/local/ddos/LICENSE http://www.inetbase.com/scripts/ddos/LICENSE -o /dev/null
 wget -q -O /usr/local/ddos/ignore.ip.list http://www.inetbase.com/scripts/ddos/ignore.ip.list -o /dev/null

@@ -43,31 +43,31 @@ case $opx in
 	0)
 	return;;
 	1)
-	wget -O /bin/tcp-client.py https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/tcp-client.py > /dev/null 2>&1; chmod +x /bin/tcp-client.py; tcp-client.py 
+	wget -O /bin/tcp-client.py https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Herramientas/tcp-client.py > /dev/null 2>&1; chmod +x /bin/tcp-client.py; tcp-client.py 
 	break;;
 	2)
-	wget -O /bin/Proxy-Publico.py https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/Proxy-Publico.py > /dev/null 2>&1; chmod +x /bin/Proxy-Publico.py; Proxy-Publico.py
+	wget -O /bin/Proxy-Publico.py https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Herramientas/Proxy-Publico.py > /dev/null 2>&1; chmod +x /bin/Proxy-Publico.py; Proxy-Publico.py
 	break;;
 	3)
-	wget -O /bin/Proxy-Privado.py https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/Proxy-Privado.py > /dev/null 2>&1; chmod +x /bin/Proxy-Privado.py; Proxy-Privado.py
+	wget -O /bin/Proxy-Privado.py https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Herramientas/Proxy-Privado.py > /dev/null 2>&1; chmod +x /bin/Proxy-Privado.py; Proxy-Privado.py
 	break;;
 	4)
-	wget -O /bin/shadown.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/shadown.sh > /dev/null 2>&1; chmod +x /bin/shadown.sh; shadown.sh
+	wget -O /bin/shadown.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Herramientas/shadown.sh > /dev/null 2>&1; chmod +x /bin/shadown.sh; shadown.sh
 	break;;
 	5)
-	wget -O /bin/shadowsocks.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/shadowsocks.sh > /dev/null 2>&1; chmod +x /bin/shadowsocks.sh; shadowsocks.sh
+	wget -O /bin/shadowsocks.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Herramientas/shadowsocks.sh > /dev/null 2>&1; chmod +x /bin/shadowsocks.sh; shadowsocks.sh
 	break;;
         6)
-	wget -O /bin/shadowsock.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/shadowsock.sh > /dev/null 2>&1; chmod +x /bin/shadowsock.sh; shadowsock.sh
+	wget -O /bin/shadowsock.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Herramientas/shadowsock.sh > /dev/null 2>&1; chmod +x /bin/shadowsock.sh; shadowsock.sh
 	break;;
         7)
-	wget -O /bin/ssrrmu.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/ssrrmu.sh > /dev/null 2>&1; chmod +x /bin/ssrrmu.sh; ssrrmu.sh
+	wget -O /bin/ssrrmu.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Herramientas/ssrrmu.sh > /dev/null 2>&1; chmod +x /bin/ssrrmu.sh; ssrrmu.sh
 	break;;
         8)
-	wget -O /bin/v2ray.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/v2ray.sh > /dev/null 2>&1; chmod +x /bin/v2ray.sh; v2ray.sh
+	wget -O /bin/v2ray.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Herramientas/v2ray.sh > /dev/null 2>&1; chmod +x /bin/v2ray.sh; v2ray.sh
 	break;;
         9)
-	wget -O /bin/vdoray.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/vdoray.sh > /dev/null 2>&1; chmod +x /bin/vdoray.sh; vdoray.sh
+	wget -O /bin/vdoray.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Herramientas/vdoray.sh > /dev/null 2>&1; chmod +x /bin/vdoray.sh; vdoray.sh
 	break;;
 esac
 done

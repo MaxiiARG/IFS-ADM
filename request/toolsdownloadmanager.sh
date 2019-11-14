@@ -29,7 +29,7 @@ sleep 1s
 }
 
 GENERADOR_BIN () {
-wget -O /etc/ger-frm/GENERADOR_BIN.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/HerramientasADM/GENERADOR_BIN.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/GENERADOR_BIN.sh
+wget -O /etc/ger-frm/GENERADOR_BIN.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/HerramientasADM/GENERADOR_BIN.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/GENERADOR_BIN.sh
 fun_bar "chmod -R 777 /etc/ger-frm/GENERADOR_BIN.sh"
 chmod -R 777 /etc/ger-frm/GENERADOR_BIN.sh > /dev/null 2>&1
 echo -e "$barra"
@@ -38,7 +38,7 @@ return
 }
 
 MasterBin () {
-wget -O /etc/ger-frm/MasterBin.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/HerramientasADM/MasterBin.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/MasterBin.sh
+wget -O /etc/ger-frm/MasterBin.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/HerramientasADM/MasterBin.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/MasterBin.sh
 fun_bar "chmod -R 777 /etc/ger-frm/MasterBin.sh"
 chmod -R 777 /etc/ger-frm/MasterBin.sh > /dev/null 2>&1
 echo -e "$barra"
@@ -47,7 +47,7 @@ return
 }
 
 real-host () {
-wget -O /etc/ger-frm/real-host.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/HerramientasADM/real-host.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/real-host.sh
+wget -O /etc/ger-frm/real-host.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/HerramientasADM/real-host.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/real-host.sh
 fun_bar "chmod -R 777 /etc/ger-frm/real-host.sh"
 chmod -R 777 /etc/ger-frm/real-host.sh > /dev/null 2>&1
 echo -e "$barra"
@@ -56,7 +56,7 @@ return
 }
 
 dados () {
-wget -O /etc/ger-frm/dados.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/HerramientasADM/dados.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/dados.sh
+wget -O /etc/ger-frm/dados.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/HerramientasADM/dados.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/dados.sh
 fun_bar "chmod -R 777 /etc/ger-frm/dados.sh"
 chmod -R 777 /etc/ger-frm/dados.sh > /dev/null 2>&1
 echo -e "$barra"
@@ -65,7 +65,7 @@ return
 }
 
 Crear-Demo () {
-wget -O /etc/ger-frm/Crear-Demo.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/HerramientasADM/Crear-Demo.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/Crear-Demo.sh
+wget -O /etc/ger-frm/Crear-Demo.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/HerramientasADM/Crear-Demo.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/Crear-Demo.sh
 fun_bar "chmod -R 777 /etc/ger-frm/Crear-Demo.sh"
 chmod -R 777 /etc/ger-frm/Crear-Demo.sh > /dev/null 2>&1
 echo -e "$barra"
@@ -74,7 +74,7 @@ return
 }
 
 squidpass () {
-wget -O /etc/ger-frm/squidpass.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/HerramientasADM/squidpass.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/squidpass.sh
+wget -O /etc/ger-frm/squidpass.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/HerramientasADM/squidpass.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/squidpass.sh
 fun_bar "chmod -R 777 /etc/ger-frm/squidpass.sh"
 chmod -R 777 /etc/ger-frm/squidpass.sh > /dev/null 2>&1
 echo -e "$barra"
@@ -83,7 +83,7 @@ return
 }
 
 insta_painel () {
-wget -O /etc/ger-frm/insta_painel https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/HerramientasADM/insta_painel > /dev/null 2>&1; chmod +x /etc/ger-frm/insta_painel
+wget -O /etc/ger-frm/insta_painel https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/HerramientasADM/insta_painel > /dev/null 2>&1; chmod +x /etc/ger-frm/insta_painel
 fun_bar "chmod -R 777 /etc/ger-frm/insta_painel"
 chmod -R 777 /etc/ger-frm/insta_painel > /dev/null 2>&1
 echo -e "$barra"
@@ -92,7 +92,7 @@ return
 }
 
 vnc () {
-wget -O /etc/ger-frm/vnc.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/HerramientasADM/vnc.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/vnc.sh
+wget -O /etc/ger-frm/vnc.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/HerramientasADM/vnc.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/vnc.sh
 fun_bar "chmod -R 777 /etc/ger-frm/vnc.sh"
 chmod -R 777 /etc/ger-frm/vnc.sh > /dev/null 2>&1
 echo -e "$barra"

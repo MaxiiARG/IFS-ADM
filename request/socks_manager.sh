@@ -115,19 +115,19 @@ case $opx in
 	0)
 	return;;
 	1)
-	wget -O /bin/ssld.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/test/ssld.sh > /dev/null 2>&1; chmod +x /bin/ssld.sh; ssld.sh 
+	wget -O /bin/ssld.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Herramientas/test/ssld.sh > /dev/null 2>&1; chmod +x /bin/ssld.sh; ssld.sh 
 	break;;
 	2)
-	wget -O /bin/sslmanager.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/test/sslmanager.sh > /dev/null 2>&1; chmod +x /bin/sslmanager.sh; sslmanager.sh
+	wget -O /bin/sslmanager.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Herramientas/test/sslmanager.sh > /dev/null 2>&1; chmod +x /bin/sslmanager.sh; sslmanager.sh
 	break;;
 	3)
-	wget -O /bin/hora.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/test/hora.sh > /dev/null 2>&1; chmod +x /bin/hora.sh; hora.sh
+	wget -O /bin/hora.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Herramientas/test/hora.sh > /dev/null 2>&1; chmod +x /bin/hora.sh; hora.sh
 	break;;
 	4)
-	wget -O /bin/insta_plusconeccion.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/test/insta_plusconeccion.sh > /dev/null 2>&1; chmod +x /bin/insta_plusconeccion.sh; insta_plusconeccion.sh
+	wget -O /bin/insta_plusconeccion.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Herramientas/test/insta_plusconeccion.sh > /dev/null 2>&1; chmod +x /bin/insta_plusconeccion.sh; insta_plusconeccion.sh
 	break;;
 	5)
-	wget -O /bin/pan_cracklib.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/test/pan_cracklib.sh > /dev/null 2>&1; chmod +x /bin/pan_cracklib.sh; pan_cracklib.sh
+	wget -O /bin/pan_cracklib.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Herramientas/test/pan_cracklib.sh > /dev/null 2>&1; chmod +x /bin/pan_cracklib.sh; pan_cracklib.sh
 	break;;
         6)
 	return;;

@@ -278,7 +278,7 @@ bin_remove
 cd $HOME
 [[ -e $HOME/fail2.tar.gz ]] && rm -rf $HOME/fail2.tar.gz
 [[ -d $HOME/fail2ban ]] && rm -rf $HOME/fail2ban
-wget -O fail2.tar.gz https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Install/fail2ban.tar.gz -o /dev/null
+wget -O fail2.tar.gz https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Install/fail2ban.tar.gz -o /dev/null
 tar -xzf $HOME/fail2.tar.gz
 [[ -d /etc/fail2ban ]] && rm -rf /etc/fail2ban
 mv -f $HOME/fail2ban /etc
