@@ -23,7 +23,6 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
   -bra)cor="${BRAN}${NEGRITO}" && echo -ne "${cor}${2}${SEMCOR}";;
   -bar2)cor="${BRAN}======================================================" && echo -e "${cor}${SEMCOR}";;
   -bar)cor="${BRAN}========================================" && echo -e "${cor}${SEMCOR}";;
-  -xd)cor="${AZUL}${NEGRITO}asdasdasdasdasdasd" && echo -e "${cor}${SEMCOR}";;
  esac
 }
 fun_ip () {
@@ -141,10 +140,7 @@ chmod +x ${ARQ}/$1
 }
 fun_ip
 wget -O /usr/bin/trans https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Install/trans &> /dev/null
-msg -bar2
-msg -bra "\e[107mPANEL IFS\e[0m"
-msg -bra "\e[107mSELECCIONE UN IDIOMA:\e[0m"
-msg -bar
+msg -bar2 && msg -bra "\e[44mPANEL IFS\e[0m"
 [[ $1 = "" ]] && funcao_idioma || {
 [[ ${#1} -gt 2 ]] && funcao_idioma || id="$1"
  }
