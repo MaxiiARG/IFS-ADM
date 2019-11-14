@@ -141,8 +141,7 @@ chmod +x ${ARQ}/$1
 fun_ip
 wget -O /usr/bin/trans https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Install/trans &> /dev/null
 msg -bar2
-msg -bra \e[44mPANEL IFS ADM \e[5mIFS ARG
-msg -bar2
+msg -ama "[ NEW - ULTIMATE - SCRIPT ]"
 [[ $1 = "" ]] && funcao_idioma || {
 [[ ${#1} -gt 2 ]] && funcao_idioma || id="$1"
  }
