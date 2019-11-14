@@ -21,8 +21,8 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
   -azu)cor="${MAG}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -verd)cor="${VERDE}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -bra)cor="${BRAN}${NEGRITO}" && echo -ne "${cor}${2}${SEMCOR}";;
-  -bar2)cor="${AMARELO}======================================================" && echo -e "${cor}${SEMCOR}";;
-  -bar)cor="${AMARELO}========================================" && echo -e "${cor}${SEMCOR}";;
+  -bar2)cor="${BRAN}======================================================" && echo -e "${cor}${SEMCOR}";;
+  -bar)cor="${BRAN}========================================" && echo -e "${cor}${SEMCOR}";;
  esac
 }
 fun_ip () {
@@ -93,7 +93,7 @@ byinst="true"
 }
 install_fim () {
 msg -ama "$(source trans -b pt:${id} "INSTALACION COMPLETA, UTILIZE LOS COMANDOS"|sed -e 's/[^a-z -]//ig')" && msg bar2
-echo -e " MENU / ADM PARA ABRIR EL MENU DE ADMINISTRACION"
+echo -e " MENU / ADM PARA ABRIR EL PANEL ADMINISTRATIVO"
 msg -bar2
 }
 ofus () {
@@ -161,7 +161,7 @@ IP="167.114.28.140" && echo "$IP" > /usr/bin/vendor_code
 cd $HOME
 msg -ne "Key: "
 wget -O $HOME/lista-arq ${REQUEST}/lista-arq > /dev/null 2>&1 && echo -e "\033[1;32m Verified" || {
-   echo -e "\033[1;32m Verified"
+   echo -e "\033[1;32m Verificado"
    invalid_key
    exit
    }
@@ -169,7 +169,7 @@ sleep 1s
 updatedb
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
    msg -bar2
-   msg -ama "$(source trans -b pt:${id} "BIENVENIDO USUARI@, GRACIAS POR UTILIZAR NUESTRO PANEL ADMINISTRATIVO"|sed -e 's/[^a-z -]//ig'): \033[1;31m[IFS-ADM]"
+   msg -ama "$(source trans -b pt:${id} "BIENVENIDO USUARIO, GRACIAS POR UTILIZAR NUESTRO PANEL ADMINISTRATIVO"|sed -e 's/[^a-z -]//ig'): \033[1;33m[IFS-ADM]"
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
    pontos="."
    stopping="$(source trans -b pt:${id} "Verificando actualizaciones"|sed -e 's/[^a-z -]//ig')"
