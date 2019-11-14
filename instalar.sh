@@ -85,7 +85,7 @@ done
 msg -bar2
 unset selection
 while [[ ${selection} != @([1-8]) ]]; do
-echo -ne "\e[45mSELECCIONAR IDIOMA: " && read selection
+echo -ne "\e[45mSELECCIONAR IDIOMA: \e[0m " && read selection
 tput cuu1 && tput dl1
 done
 pv="$(echo ${idioma[$selection]}|cut -d' ' -f1)"
