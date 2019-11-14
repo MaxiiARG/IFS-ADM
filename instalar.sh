@@ -169,10 +169,10 @@ sleep 1s
 updatedb
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
    msg -bar2
-   msg -ama "$(source trans -b pt:${id} "\e[43mBIENVENIDO USUARIO, GRACIAS POR UTILIZAR NUESTRO PANEL ADMINISTRATIVO"|sed -e 's/[^a-z -]//ig'): \e[44m[IFS-ADM]"
+   msg -ama "$(source trans -b pt:${id} "\e[43m BIENVENIDO USUARIO, GRACIAS POR UTILIZAR NUESTRO PANEL ADMINISTRATIVO\e[0m "|sed -e 's/[^a-z -]//ig'): \e[44m[IFS-ADM]\e[0m "
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
    pontos="."
-   stopping="$(source trans -b pt:${id} "\e[1mVerificando actualizaciones"|sed -e 's/[^a-z -]//ig')"
+   stopping="$(source trans -b pt:${id} "✔ Verificando actualizaciones"|sed -e 's/[^a-z -]//ig')"
    for arqx in $(cat $HOME/lista-arq); do
    msg -verm "${stopping}${pontos}"
    wget -O ${SCPinstal}/${arqx} ${REQUEST}/${arqx} > /dev/null 2>&1 && verificar_arq "${arqx}" || error_fun
