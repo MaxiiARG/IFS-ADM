@@ -23,6 +23,7 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
   -bra)cor="${BRAN}${NEGRITO}" && echo -ne "${cor}${2}${SEMCOR}";;
   -bar2)cor="${BRAN}======================================================" && echo -e "${cor}${SEMCOR}";;
   -bar)cor="${BRAN}========================================" && echo -e "${cor}${SEMCOR}";;
+  -xd)cor="${AZUL}${NEGRITO}asdasdasdasdasdasd" && echo -e "${cor}${SEMCOR}";;
  esac
 }
 fun_ip () {
