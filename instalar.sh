@@ -145,6 +145,7 @@ msg -bar2
 msg -bra "INSTALANDO PANEL ADMINISTRATIVO"
 msg -bra " [ IFS - ADM | 2019 ] "
 msg -bra "SELECCIONE UN IDIOMA:"
+msg -xd
 [[ $1 = "" ]] && funcao_idioma || {
 [[ ${#1} -gt 2 ]] && funcao_idioma || id="$1"
  }
