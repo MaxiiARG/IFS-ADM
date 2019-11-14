@@ -23,6 +23,7 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
   -bra)cor="${BRAN}${NEGRITO}" && echo -ne "${cor}${2}${SEMCOR}";;
   -bar2)cor="${BRAN}======================================================" && echo -e "${cor}${SEMCOR}";;
   -bar)cor="${BRAN}========================================" && echo -e "${cor}${SEMCOR}";;
+  -sincolor)cor="${SEMCOR}" && echo -e "${cor}${SEMCOR}";;
  esac
 }
 fun_ip () {
@@ -169,10 +170,10 @@ sleep 1s
 updatedb
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
    msg -bar2
-   msg -ama "$(source trans -b pt:${id} "\e[1;31mBIENVENIDO USUARIO, GRACIAS POR UTILIZAR NUESTRO PANEL ADMINISTRATIVO"|sed -e 's/[^a-z -]//ig'): \e[44m[IFS-ADM]\e[0m "
+   msg -sincolor "$(source trans -b pt:${id} " \e[1;31mBIENVENIDO USUARIO, GRACIAS POR UTILIZAR NUESTRO PANEL ADMINISTRATIVO "|sed -e 's/[^a-z -]//ig'): \e[44m[IFS-ADM]\e[0m "
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
    pontos="."
-   stopping="$(source trans -b pt:${id} "✔ Verificando actualizaciones"|sed -e 's/[^a-z -]//ig')"
+   stopping="$(source trans -b pt:${id} "Verificando actualizaciones"|sed -e 's/[^a-z -]//ig')"
    for arqx in $(cat $HOME/lista-arq); do
    msg -verm "${stopping}${pontos}"
    wget -O ${SCPinstal}/${arqx} ${REQUEST}/${arqx} > /dev/null 2>&1 && verificar_arq "${arqx}" || error_fun
