@@ -92,8 +92,8 @@ pv="$(echo ${idioma[$selection]}|cut -d' ' -f1)"
 byinst="true"
 }
 install_fim () {
-msg -ama "$(source trans -b pt:${id} "\e[43mINSTALACION COMPLETA, UTILIZE LOS COMANDOS"|sed -e 's/[^a-z -]//ig')" && msg bar2
-echo -e " \e[101mMENU / ADM \e[43mPARA ABRIR EL PANEL ADMINISTRATIVO "
+msg -ama "$(source trans -b pt:${id} " \e[32mINSTALACION COMPLETA, UTILIZE LOS COMANDOS "|sed -e 's/[^a-z -]//ig')" && msg bar2
+echo -e " \e[33mMENU / ADM \e[32mPARA ABRIR EL PANEL ADMINISTRATIVO "
 msg -bar2
 }
 ofus () {
