@@ -93,8 +93,8 @@ pv="$(echo ${idioma[$selection]}|cut -d' ' -f1)"
 byinst="true"
 }
 install_fim () {
-msg -ama "$(source trans -b pt:${id} " \e[32mINSTALACION COMPLETA, UTILIZE LOS COMANDOS "|sed -e 's/[^a-z -]//ig')" && msg bar2
-echo -e " \e[33mMENU / ADM \e[32mPARA ABRIR EL PANEL ADMINISTRATIVO "
+msg -ama "$(source trans -b pt:${id} "INSTALACION COMPLETA, UTILIZE LOS COMANDOS"|sed -e 's/[^a-z -]//ig')" && msg bar2
+echo -e "\e[33mMENU / ADM \e[32mPARA ABRIR EL PANEL ADMINISTRATIVO"
 msg -bar2
 }
 ofus () {
@@ -170,7 +170,7 @@ sleep 1s
 updatedb
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
    msg -bar2
-   msg -ama "$(source trans -b pt:${id} " -ne BIENVENIDO USUARIO, GRACIAS POR UTILIZAR NUESTRO PANEL ADMINISTRATIVO "|sed -e 's/[^a-z -]//ig'): \e[44m[IFS-ADM]\e[0m "
+   msg -ama "$(source trans -b pt:${id} "BIENVENIDO USUARIO, GRACIAS POR UTILIZAR NUESTRO PANEL ADMINISTRATIVO "|sed -e 's/[^a-z -]//ig'): \e[44m[IFS-ADM]\e[0m "
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
    pontos="."
    stopping="$(source trans -b pt:${id} "Verificando actualizaciones"|sed -e 's/[^a-z -]//ig')"
