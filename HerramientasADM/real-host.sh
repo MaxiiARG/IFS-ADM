@@ -111,7 +111,7 @@ echo ""
 echo ""
 rm -rf $HOME/hostextractor/ > /dev/null 2>&1
 rm -rf /etc/hostextractor
-wget -O $HOME/hostextractor.tgz https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Install/hostextractor.tgz > /dev/null 2>&1
+wget -O $HOME/hostextractor.tgz https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Install/hostextractor.tgz > /dev/null 2>&1
 tar -xvf hostextractor.tgz > /dev/null 2>&1
 rm -rf $HOME/hostextractor.tgz > /dev/null 2>&1
 mv $HOME/hostextractor/ /etc/ > /dev/null 2>&1

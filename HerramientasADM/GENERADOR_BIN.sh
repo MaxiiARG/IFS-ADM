@@ -1,6 +1,6 @@
 #!/bin/bash
 # Bin _ Gen #OFC
-link_bin="https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Install/generadorcc.py"
+link_bin="https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/Install/generadorcc.py"
 [[ ! -e /usr/bin/generadorcc.py ]] && wget -O /usr/bin/generadorcc.py ${link_bin} > /dev/null 2>&1 && chmod +x /usr/bin/generadorcc.py
 SCPdir="/etc/newadm" && [[ ! -d ${SCPdir} ]] && exit 1
 SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && exit

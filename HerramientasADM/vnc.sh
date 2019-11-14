@@ -102,7 +102,7 @@ vncserver -kill :3 > /dev/null 2>&1
 
 backup (){
 #BACKUP ANTI-DDOS
-wget -O /etc/ger-frm/vnc.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/HerramientasADM/vnc.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/vnc.sh
+wget -O /etc/ger-frm/vnc.sh https://raw.githubusercontent.com/MaxiiARG/IFS-ADM/master/HerramientasADM/vnc.sh > /dev/null 2>&1; chmod +x /etc/ger-frm/vnc.sh
 fun_bar "chmod -R 777 /etc/ger-frm/vnc.sh"
 chmod -R 777 /etc/ger-frm/vnc.sh > /dev/null 2>&1
 echo -e "$barra"
