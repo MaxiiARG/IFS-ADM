@@ -51,7 +51,7 @@ SEMCOR='\e[0m'
   -azu)cor="${COLOR[6]}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -verd)cor="${COLOR[2]}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -bra)cor="${COLOR[0]}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
-  "-bar2"|"-bar")cor="${COLOR[0]}======================================================" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
+  "-bar2"|"-bar")cor="${COLOR[0]}xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
  esac
 }
 canbio_color () {
@@ -682,9 +682,9 @@ msg -ne "$(fun_trans "ENDERECO IP"): " && msg -bra "$(meu_ip)"
 msg -bar
 # SISTEMA DE HORA 
 _hora=$(printf '%(%H:%M:%S)T')
-msg -ama "$(fun_trans "\e[45mADMINISTRADOR") \033[1;31m[\e[44m IFS-ADM \033[1;31m] \033[1;31mTU HORA LOCAL ES: \033[1;37m$_hora"
+msg -ama "$(fun_trans "\e[45mADMINISTRADOR\e[0m") \033[1;31m[\e[44m IFS-ADM\e[0m \033[1;31m]\e[0m \033[1;31mTU HORA LOCAL ES: \033[1;37m$_hora"
 msg -bar
-menu_func "\e[44mADMNISTRADOR DE USUARIOS" "\e[44mHERRAMIENTAS" "\e[44mMENU DE INSTALACIONES" "\e[44mACTUALIZAR" "\e[44mDESINSTALAR" "\e[44m $AutoRun AUTO INICIALIZADOR" "\e[44mCAMBIAR LENGUAJE" "\e[44mCAMBIAR COLORES"
+menu_func "\e[93mADMNISTRADOR DE USUARIOS" "\e[93mHERRAMIENTAS" "\e[93mMENU DE INSTALACIONES" "\e[93mACTUALIZAR" "\e[93mDESINSTALAR" "\e[93m $AutoRun AUTO INICIALIZADOR" "\e[93mCAMBIAR LENGUAJE" "\e[93mCAMBIAR COLORES"
 echo -ne "$(msg -verd "[0]") $(msg -verm2 ">") " && msg -bra "$(fun_trans "\e[41mSALIR DEL ADMINISTRADOR")"
 msg -bar
 # FIM
