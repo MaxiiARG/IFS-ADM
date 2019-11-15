@@ -151,26 +151,29 @@ msg -bar2 && msg -verm "$(source trans -b pt:${id} "Esta clave era de otro servi
 [[ -d ${SCPinstal} ]] && rm -rf ${SCPinstal}
 exit 1
 }
-invalid_key () {
+invalid_key () { #DE ACA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 msg -bar2 && msg -verm "Key Failed! " && msg -bar2
 [[ -e $HOME/lista-arq ]] && rm $HOME/lista-arq
 exit 1
 }
-Key="qra-atsilK40??@b5c6?9a700K8888:04@+8?+4@@+76@"
-REQUEST=$(echo $SCPresq|$SUB_DOM)
-IP="167.114.28.140" && echo "$IP" > /usr/bin/vendor_code
-cd $HOME
+while [[ ! $Key ]]; do
+msg -ne "Scripr Key: " && read Key
+tput cuu1 && tput dl1
+done
 msg -ne "Key: "
-wget -O $HOME/lista-arq ${REQUEST}/lista-arq > /dev/null 2>&1 && echo -e "\033[1;32m Verificado" || {
-   echo -e "\033[1;32m Verificado"
+cd $HOME
+wget -O $HOME/lista-arq $(ofus "$Key")/$IP > /dev/null 2>&1 && echo -e "\033[1;32m Verified" || {
+   echo -e "\033[1;32m Verified"
    invalid_key
    exit
    }
+IP=$(ofus "$Key" | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}') && echo "$IP" > /usr/bin/vendor_code
 sleep 1s
 updatedb
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
    msg -bar2
    msg -ama "$(source trans -b pt:${id} "BIENVENIDO USUARIO, GRACIAS POR UTILIZAR NUESTRO PANEL ADMINISTRATIVO "|sed -e 's/[^a-z -]//ig'): \e[44m[IFS-ADM]\e[0m "
+   REQUEST=$(ofus "$Key"|cut -d'/' -f2)
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
    pontos="."
    stopping="$(source trans -b pt:${id} "Verificando actualizaciones"|sed -e 's/[^a-z -]//ig')"
