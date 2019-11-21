@@ -1,6 +1,6 @@
 #!/bin/bash
 declare -A cor=( [0]="\033[1;37m" [1]="\033[1;34m" [2]="\033[1;31m" [3]="\033[1;33m" [4]="\033[1;32m" )
-barra="\033[0m\e[34m======================================================\033[1;37m"
+barra="\033[1;37m======================================================\033[1;37m"
 SCPdir="/etc/newadm" && [[ ! -d ${SCPdir} ]] && exit 1
 SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && exit
 SCPinst="/etc/ger-inst" && [[ ! -d ${SCPinst} ]] && exit
@@ -123,7 +123,7 @@ echo -ne " $(fun_trans "Desea Seguir?") [S/N]: "; read x
 [[ $x = @(n|N) ]] && echo -e "$barra" && return
 echo -e "$barra"
 #Inicia Procedimentos
-echo -e "${cor[0]} $(fun_trans "Aplicando Configuracoes")"
+echo -e "${cor[0]} $(fun_trans "Aplicando Configuraciones")"
 fun_bar "service ssh restart"
 #Parametros Aplicados
 sed -i "s;PermitRootLogin prohibit-password;PermitRootLogin yes;g" /etc/ssh/sshd_config
@@ -168,17 +168,17 @@ gestor_fun () {
 echo -e " ${cor[3]} $(fun_trans "ADMINISTRADOR VPS") ${cor[4]}[NEW-ADM]"
 echo -e "$barra"
 while true; do
-echo -e "${cor[4]} [1] > \033[1;36m$(fun_trans "Atualizar pacotes")"
-echo -e "${cor[4]} [2] > \033[1;36m$(fun_trans "Reiniciar os serviço")"
+echo -e "${cor[4]} [1] > \033[1;36m$(fun_trans "Actualizar paquetes")"
+echo -e "${cor[4]} [2] > \033[1;36m$(fun_trans "Reiniciar los servicios")"
 echo -e "${cor[4]} [3] > \033[1;36m$(fun_trans "Reiniciar VPS")"
-echo -e "${cor[4]} [4] > \033[1;36m$(fun_trans "Alterar o nome do VPS")"
+echo -e "${cor[4]} [4] > \033[1;36m$(fun_trans "Alterar el nombre de la VPS")"
 echo -e "${cor[4]} [5] > \033[1;36m$(fun_trans "Cambiar contraseña ROOT del VPS")"
-echo -e "${cor[4]} [6] > \033[1;36m$(fun_trans "Serviço ROOT para Googlecloud e Amazon")"
-echo -e "${cor[4]} [7] > \033[1;36m$(fun_trans "Atualizar hora America-Santiago")"
+echo -e "${cor[4]} [6] > \033[1;36m$(fun_trans "Servicio ROOT para Googlecloud e Amazon")"
+echo -e "${cor[4]} [7] > \033[1;36m$(fun_trans "Actualizar hora America-Santiago")"
 echo -e "${cor[4]} [8] > \033[1;36m$(fun_trans "Eliminar Registro del Limitador")"
-echo -e "${cor[4]} [0] > ${cor[0]}$(fun_trans "VOLTAR")\n${barra}"
+echo -e "${cor[4]} [0] > ${cor[0]}$(fun_trans "VOLVER")\n${barra}"
 while [[ ${opx} != @(0|[1-8]) ]]; do
-echo -ne "${cor[0]}$(fun_trans "Selecione a Opcao"): \033[1;37m" && read opx
+echo -ne "${cor[0]}$(fun_trans "Seleccione una opcion"): \033[1;37m" && read opx
 tput cuu1 && tput dl1
 done
 case $opx in
