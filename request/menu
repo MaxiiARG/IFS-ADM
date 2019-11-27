@@ -671,8 +671,8 @@ on="\033[1;32m7300" && off="\033[1;31m[OFF]"
 [[ $(ps x | grep badvpn | grep -v grep | awk '{print $1}') ]] && badvpn=$on || badvpn=$off
 echo -e "\e[1;31mBADVPN:\e[0m" "$badvpn"
 msg -bar
-msg -ne "$(fun_trans "★ \e[42mSISTEMA OPERATIVO")\e[0m: " && msg -bra "\e[32m$(os_system)  "
-msg -ne "$(fun_trans "★ \e[42mDIRECCION DE IP")\e[0m: " && msg -bra "\e[32m$(meu_ip)"
+msg -ama "$(fun_trans "★ \e[42mSISTEMA OPERATIVO")\e[0m: " && msg -bra "\e[32m$(os_system)  "
+msg -ama "$(fun_trans "★ \e[42mDIRECCION DE IP")\e[0m: " && msg -bra "\e[32m$(meu_ip)"
 [[ -e ${SCPdir}/USRonlines ]] && msg -bar && msg -ne "$(fun_trans "USUARIOS ONLINE")\e[0m: " && msg -bra "$(cat ${SCPdir}/USRonlines) $(fun_trans "Usuarios")"
 [[ -e ${SCPdir}/USRexpired ]] && msg -ne "$(fun_trans "USUARIOS EXPIRADOS")\e[0m: " && msg -bra "$(cat ${SCPdir}/USRexpired) $(fun_trans "Usuarios")"
 [[ -e ${SCPdir}/message.txt ]] && msg -bar && msg -bra "\e[32mMENSAJE\e[0m: $(cat ${SCPdir}/message.txt)"
