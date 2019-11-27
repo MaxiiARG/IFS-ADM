@@ -93,7 +93,6 @@ retorno="$(source trans -e bing -b pt:${LINGUAGE} "$@"|sed -e 's/[^a-z0-9 -]//ig
 fi
 echo "texto[$@]='$retorno'"  >> /etc/texto-adm
 echo "$retorno"
-else
 echo "${texto[$@]}"
 fi
 }
