@@ -183,28 +183,28 @@ Port=$(echo {$port} | awk '{print $9}' | awk -F ":" '{print $2}')
 NOREPEAT+="$Port\n"
 case ${reQ} in
 squid|squid3)
-[[ -z $SQD ]] && local SQD="\033[1;31mSQUID: \033[1;32m"
+[[ -z $SQD ]] && local SQD="\e[33m➤SQUID: \033[1;32m"
 SQD+="$Port ";;
 apache|apache2)
-[[ -z $APC ]] && local APC="\033[1;31mAPACHE: \033[1;32m"
+[[ -z $APC ]] && local APC="\e[33m➤APACHE: \033[1;32m"
 APC+="$Port ";;
 ssh|sshd)
-[[ -z $SSH ]] && local SSH="\033[1;31mSSH: \033[1;32m"
+[[ -z $SSH ]] && local SSH="\e[33m➤SSH: \033[1;32m"
 SSH+="$Port ";;
 dropbear)
-[[ -z $DPB ]] && local DPB="\033[1;31mDROPBEAR: \033[1;32m"
+[[ -z $DPB ]] && local DPB="\e[33m➤DROPBEAR: \033[1;32m"
 DPB+="$Port ";;
 ssserver)
-[[ -z $SSV ]] && local SSV="\033[1;31mSHADOWSOCKS: \033[1;32m"
+[[ -z $SSV ]] && local SSV="\e[33m➤SHADOWSOCKS: \033[1;32m"
 SSV+="$Port ";;
 openvpn)
-[[ -z $OVPN ]] && local OVPN="\033[1;31mOPENVPN: \033[1;32m"
+[[ -z $OVPN ]] && local OVPN="\e[33m➤OPENVPN: \033[1;32m"
 OVPN+="$Port ";;
 stunnel4|stunnel)
-[[ -z $SSL ]] && local SSL="\033[1;31mSSL: \033[1;32m"
+[[ -z $SSL ]] && local SSL="\e[33m➤SSL: \033[1;32m"
 SSL+="$Port ";;
 python|python3)
-[[ -z $PY3 ]] && local PY3="\033[1;31mSOCKS: \033[1;32m"
+[[ -z $PY3 ]] && local PY3="\e[33m➤SOCKS: \033[1;32m"
 PY3+="$Port ";;
 esac
 done <<< "${portasVAR}"
@@ -671,8 +671,8 @@ on="\033[1;32m7300" && off="\033[1;31m[OFF]"
 [[ $(ps x | grep badvpn | grep -v grep | awk '{print $1}') ]] && badvpn=$on || badvpn=$off
 echo -e "\e[1;31mBADVPN:\e[0m" "$badvpn"
 msg -bar
-msg -ama "$(fun_trans "★ \e[42mSISTEMA OPERATIVO")\e[0m: " && msg -bra "\e[32m$(os_system)  "
-msg -ama "$(fun_trans "★ \e[42mDIRECCION DE IP")\e[0m: " && msg -bra "\e[32m$(meu_ip)"
+msg -ama "$(fun_trans "★ \e[42mSISTEMA OPERATIVO")\e[0m: " && msg -bra "$(os_system)  "
+msg -ama "$(fun_trans "★ \e[42mDIRECCION DE IP")\e[0m: " && msg -bra "$(meu_ip)"
 [[ -e ${SCPdir}/USRonlines ]] && msg -bar && msg -ne "$(fun_trans "USUARIOS ONLINE")\e[0m: " && msg -bra "$(cat ${SCPdir}/USRonlines) $(fun_trans "Usuarios")"
 [[ -e ${SCPdir}/USRexpired ]] && msg -ne "$(fun_trans "USUARIOS EXPIRADOS")\e[0m: " && msg -bra "$(cat ${SCPdir}/USRexpired) $(fun_trans "Usuarios")"
 [[ -e ${SCPdir}/message.txt ]] && msg -bar && msg -bra "\e[32mMENSAJE\e[0m: $(cat ${SCPdir}/message.txt)"
