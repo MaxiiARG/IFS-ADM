@@ -192,7 +192,7 @@ ssh|sshd)
 [[ -z $SSH ]] && local SSH="✔\e[33mSSH: \033[1;32m"
 SSH+="$Port ";;
 dropbear)
-[[ -z $DPB ]] && local DPB="✔\e[33mDROPBEAR: \033[1;32m"
+[[ -z $DPB ]] && local DPB="\e[0m✔\e[33mDROPBEAR: \033[1;32m"
 DPB+="$Port ";;
 ssserver)
 [[ -z $SSV ]] && local SSV="✔\e[33mSHADOWSOCKS: \033[1;32m"
@@ -664,10 +664,10 @@ export -f fun_ip
 clear
 msg -bar
 msg -ama "     \e[42mPUERTOS ACTIVOS E INFORMACION DEL SERVIDOR\e[0m"
-msg -bar "\e[0m"
+msg -bar
 mine_port
 # BADVPN-UDPGW 7300
-on="\033[1;32mPUERTO ENCENDIDO EN: 7300" && off="\033[1;31m[APAGADO]"
+on="\033[1;32mPUERTO EN 7300" && off="\033[1;31m[APAGADO]"
 [[ $(ps x | grep badvpn | grep -v grep | awk '{print $1}') ]] && badvpn=$on || badvpn=$off
 echo -e "✔\e[33mBADVPN:\e[0m" "$badvpn"
 msg -bar
