@@ -563,10 +563,10 @@ float_data "$arqs" "$Numb" && {
   let Numb++
   }
 done
-echo -ne "$(msg -verd "[$Numb]") $(msg -verm2 ">") " && msg -azu "$(fun_trans "DETALLES DEL SISTEMA") $ofc"
+echo -ne "$(msg -verd "[$Numb]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "DETALLES DEL SISTEMA") $ofc"
 script[$Numb]="systeminf"
 let Numb++
-echo -ne "$(msg -verd "[$Numb]") $(msg -verm2 ">") " && msg -azu "$(fun_trans "LIMPIAR CACHE DEL SISTEMA") $ofc"
+echo -ne "$(msg -verd "[$Numb]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "LIMPIAR CACHE DEL SISTEMA") $ofc"
 script[$Numb]="limpar"
 let Numb++
 echo -ne "$(msg -verd "[$Numb]") $(msg -verm2 ">") $(msg -ama "[!]") " && msg -verd "$(fun_trans "ADICCIONAR HERRAMIENTAS")"
