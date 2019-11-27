@@ -671,13 +671,13 @@ on="\033[1;32m7300" && off="\033[1;31m[OFF]"
 [[ $(ps x | grep badvpn | grep -v grep | awk '{print $1}') ]] && badvpn=$on || badvpn=$off
 echo -e "\e[1;31mBADVPN:\e[0m" "$badvpn"
 msg -bar
-msg -ne "$(fun_trans "SISTEMA OPERACIONAL"): " && msg -bra "$(os_system)  "
-msg -ne "$(fun_trans "ENDERECO IP"): " && msg -bra "$(meu_ip)"
+msg -ne "$(fun_trans "\e[105mSISTEMA OPERATIVO"): " && msg -bra "$(os_system)  "
+msg -ne "$(fun_trans "DIRECCION DE IP"): " && msg -bra "$(meu_ip)"
 [[ -e ${SCPdir}/USRonlines ]] && msg -bar && msg -ne "$(fun_trans "USUARIOS ONLINE"): " && msg -bra "$(cat ${SCPdir}/USRonlines) $(fun_trans "Usuarios")"
 [[ -e ${SCPdir}/USRexpired ]] && msg -ne "$(fun_trans "USUARIOS EXPIRADOS"): " && msg -bra "$(cat ${SCPdir}/USRexpired) $(fun_trans "Usuarios")"
-[[ -e ${SCPdir}/message.txt ]] && msg -bar && msg -bra "MENSAJE: $(cat ${SCPdir}/message.txt)"
-[[ -e ${SCPdir}/noticia.txt ]] && msg -bar && msg -bra "NOTICIAS: $(cat ${SCPdir}/noticia.txt)"
-[[ -e ${SCPdir}/key.txt ]] && msg -bar && msg -bra "USER-KEY: $(cat ${SCPdir}/key.txt)"
+[[ -e ${SCPdir}/message.txt ]] && msg -bar && msg -bra "\e[32MENSAJE: $(cat ${SCPdir}/message.txt)"
+[[ -e ${SCPdir}/noticia.txt ]] && msg -bar && msg -bra "\e[32NOTICIAS: $(cat ${SCPdir}/noticia.txt)"
+msg -bra "\e[30;48;5;82mIFS-ADM USUARIO LIBRE"
 # NOVO SISTEMA DE MENUS
 msg -bar
 # SISTEMA DE HORA 
