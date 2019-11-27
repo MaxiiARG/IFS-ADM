@@ -669,7 +669,7 @@ mine_port
 # BADVPN-UDPGW 7300
 on="\033[1;32m7300" && off="\033[1;31m[OFF]"
 [[ $(ps x | grep badvpn | grep -v grep | awk '{print $1}') ]] && badvpn=$on || badvpn=$off
-echo -e "\e[1;31mBADVPN:\e[0m" "$badvpn"
+echo -e "\e[33mBADVPN:\e[0m" "$badvpn"
 msg -bar
 msg -ama "$(fun_trans "★ \e[42mSISTEMA OPERATIVO")\e[0m: " && msg -bra "$(os_system)  "
 msg -ama "$(fun_trans "★ \e[42mDIRECCION DE IP")\e[0m: " && msg -bra "$(meu_ip)"
