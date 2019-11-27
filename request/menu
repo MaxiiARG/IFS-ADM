@@ -663,11 +663,11 @@ export -f meu_ip
 export -f fun_ip
 clear
 msg -bar
-msg -ama "     \e[42mPUERTOS ACTIVOS E INFORMACION DEL SERVIDOR"
-msg -bar
+msg -ama "     \e[42mPUERTOS ACTIVOS E INFORMACION DEL SERVIDOR\e[0m"
+msg -bar "\e[0m"
 mine_port
 # BADVPN-UDPGW 7300
-on="\033[1;32m7300" && off="\033[1;31m[OFF]"
+on="\033[1;32mPUERTO ENCENDIDO EN: 7300" && off="\033[1;31m[APAGADO]"
 [[ $(ps x | grep badvpn | grep -v grep | awk '{print $1}') ]] && badvpn=$on || badvpn=$off
 echo -e "✔\e[33mBADVPN:\e[0m" "$badvpn"
 msg -bar
