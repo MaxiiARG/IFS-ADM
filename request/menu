@@ -516,7 +516,7 @@ case $1 in
 # Menu Instalação Ger-Frm DEV
 "GENERADOR_BIN.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mGENERADOR DE BIN") $dev";;
 "ddos.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mANTI DDOS") $dev";;
-"statusdesistema.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "\e[40;38;5;82mINFORMACION: (NLOAD/HTOP/STATUSVPS/NETTOOLS) $dev";;
+"statusdesistema.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "\e[220mINFORMACION\e[0m: (NLOAD/HTOP/STATUSVPS/NETTOOLS) $dev";;
 "optimizar.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mOPTIMIZAR SERVIDOR") $dev";;
 "panelsshplus.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mPANEL DE VENTAS SSHPLUS") $dev";;
 "gestor.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mADMINISTRADOR VPS") $dev";;
