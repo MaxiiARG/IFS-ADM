@@ -186,25 +186,25 @@ squid|squid3)
 [[ -z $SQD ]] && local SQD="\e[33mSQUID: \033[1;32m"
 SQD+="$Port ";;
 apache|apache2)
-[[ -z $APC ]] && local APC="\e[33mAPACHE: \033[1;32m"
+[[ -z $APC ]] && local APC="✔\e[33mAPACHE: \033[1;32m"
 APC+="$Port ";;
 ssh|sshd)
-[[ -z $SSH ]] && local SSH="\e[33mSSH: \033[1;32m"
+[[ -z $SSH ]] && local SSH="✔\e[33mSSH: \033[1;32m"
 SSH+="$Port ";;
 dropbear)
-[[ -z $DPB ]] && local DPB="\e[33mDROPBEAR: \033[1;32m"
+[[ -z $DPB ]] && local DPB="✔\e[33mDROPBEAR: \033[1;32m"
 DPB+="$Port ";;
 ssserver)
-[[ -z $SSV ]] && local SSV="\e[33mSHADOWSOCKS: \033[1;32m"
+[[ -z $SSV ]] && local SSV="✔\e[33mSHADOWSOCKS: \033[1;32m"
 SSV+="$Port ";;
 openvpn)
-[[ -z $OVPN ]] && local OVPN="\e[33mOPENVPN: \033[1;32m"
+[[ -z $OVPN ]] && local OVPN="✔\e[33mOPENVPN: \033[1;32m"
 OVPN+="$Port ";;
 stunnel4|stunnel)
-[[ -z $SSL ]] && local SSL="\e[33mSSL: \033[1;32m"
+[[ -z $SSL ]] && local SSL="✔\e[33mSSL: \033[1;32m"
 SSL+="$Port ";;
 python|python3)
-[[ -z $PY3 ]] && local PY3="\e[33mSOCKS: \033[1;32m"
+[[ -z $PY3 ]] && local PY3="✔\e[33mSOCKS: \033[1;32m"
 PY3+="$Port ";;
 esac
 done <<< "${portasVAR}"
@@ -669,7 +669,7 @@ mine_port
 # BADVPN-UDPGW 7300
 on="\033[1;32m7300" && off="\033[1;31m[OFF]"
 [[ $(ps x | grep badvpn | grep -v grep | awk '{print $1}') ]] && badvpn=$on || badvpn=$off
-echo -e "\e[33mBADVPN:\e[0m" "$badvpn"
+echo -e "✔\e[33mBADVPN:\e[0m" "$badvpn"
 msg -bar
 msg -ama "$(fun_trans "★ \e[42mSISTEMA OPERATIVO")\e[0m: " && msg -bra "$(os_system)  "
 msg -ama "$(fun_trans "★ \e[42mDIRECCION DE IP")\e[0m: " && msg -bra "$(meu_ip)"
