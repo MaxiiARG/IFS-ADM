@@ -183,28 +183,28 @@ Port=$(echo {$port} | awk '{print $9}' | awk -F ":" '{print $2}')
 NOREPEAT+="$Port\n"
 case ${reQ} in
 squid|squid3)
-[[ -z $SQD ]] && local SQD="\e[33m➤SQUID: \033[1;32m"
+[[ -z $SQD ]] && local SQD="\e[33mSQUID: \033[1;32m"
 SQD+="$Port ";;
 apache|apache2)
-[[ -z $APC ]] && local APC="\e[33m➤APACHE: \033[1;32m"
+[[ -z $APC ]] && local APC="\e[33mAPACHE: \033[1;32m"
 APC+="$Port ";;
 ssh|sshd)
-[[ -z $SSH ]] && local SSH="\e[33m➤SSH: \033[1;32m"
+[[ -z $SSH ]] && local SSH="\e[33mSSH: \033[1;32m"
 SSH+="$Port ";;
 dropbear)
-[[ -z $DPB ]] && local DPB="\e[33m➤DROPBEAR: \033[1;32m"
+[[ -z $DPB ]] && local DPB="\e[33mDROPBEAR: \033[1;32m"
 DPB+="$Port ";;
 ssserver)
-[[ -z $SSV ]] && local SSV="\e[33m➤SHADOWSOCKS: \033[1;32m"
+[[ -z $SSV ]] && local SSV="\e[33mSHADOWSOCKS: \033[1;32m"
 SSV+="$Port ";;
 openvpn)
-[[ -z $OVPN ]] && local OVPN="\e[33m➤OPENVPN: \033[1;32m"
+[[ -z $OVPN ]] && local OVPN="\e[33mOPENVPN: \033[1;32m"
 OVPN+="$Port ";;
 stunnel4|stunnel)
-[[ -z $SSL ]] && local SSL="\e[33m➤SSL: \033[1;32m"
+[[ -z $SSL ]] && local SSL="\e[33mSSL: \033[1;32m"
 SSL+="$Port ";;
 python|python3)
-[[ -z $PY3 ]] && local PY3="\e[33m➤SOCKS: \033[1;32m"
+[[ -z $PY3 ]] && local PY3="\e[33mSOCKS: \033[1;32m"
 PY3+="$Port ";;
 esac
 done <<< "${portasVAR}"
