@@ -86,7 +86,6 @@ local LINGUAGE=$(cat ${SCPidioma})
 [[ $LINGUAGE = "pt" ]] && echo "$@" && return
 [[ ! -e /etc/texto-adm ]] && touch /etc/texto-adm
 source /etc/texto-adm
-if [[ -z "$(echo ${texto[$@]})" ]]; then
 if [[ `echo "$@" | grep -o '*'` = "*" ]]; then
 retorno="$(source trans -e bing -b pt:${LINGUAGE} "$@"|sed -e 's/[^a-z0-9 -]//ig'| awk '{print toupper($0)}' 2>/dev/null)"
 else
@@ -669,7 +668,7 @@ mine_port
 # BADVPN-UDPGW 7300
 on="\033[1;32mPUERTO EN 7300" && off="\033[1;31m[APAGADO]"
 [[ $(ps x | grep badvpn | grep -v grep | awk '{print $1}') ]] && badvpn=$on || badvpn=$off
-echo -e "✔\e[33mBADVPN:\e[0m" "$badvpn"
+echo -e "\e[0m✔\e[33mBADVPN:\e[0m" "$badvpn"
 msg -bar
 msg -ama "$(fun_trans "★ \e[42mSISTEMA OPERATIVO")\e[0m: " && msg -bra "$(os_system)  "
 msg -ama "$(fun_trans "★ \e[42mDIRECCION DE IP")\e[0m: " && msg -bra "$(meu_ip)"
