@@ -554,7 +554,7 @@ esac
 ferramentas_fun () {
 tput cuu1 && tput dl1
 msg -bar2
-msg -ama "$(fun_trans "MENU DE HERRAMIENTAS")"
+msg -ama "$(fun_trans "\e[40;38;5;82m MENU DE \e[30;48;5;82m HERRAMIENTAS \e[0m")"
 msg -bar2
 local Numb=1
 for arqs in $(ls ${SCPfrm}); do
