@@ -514,24 +514,24 @@ case $1 in
 "criar_pay.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mGENERADOR DE PAYLOAD") $dev";;
 "vnc.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mVNC SERVER") $dev";;
 # Menu Instalação Ger-Frm DEV
-"GENERADOR_BIN.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mGENERADOR DE BIN") $dev";;
-"ddos.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mANTI DDOS") $dev";;
-"statusdesistema.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "\e[30;48;5;82mINFORMACION: (NLOAD/HTOP/STATUSVPS/NETTOOLS) $dev";;
-"optimizar.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mOPTIMIZAR SERVIDOR") $dev";;
-"panelsshplus.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mPANEL DE VENTAS SSHPLUS") $dev";;
-"gestor.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mADMINISTRADOR VPS") $dev";;
-"proxy_manager.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mPROXY MANAGER") \033[1;33m(\033[1;37mBETA-TESTER\033[1;33m) $dev";;
-"socks_manager.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mPROXY MANAGER 2") \033[1;33m(\033[1;37mBETA-TESTER\033[1;33m) $dev";;
-"toolsdownloadmanager.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mTOOLS DOWNLOAD MANAGER") $dev";;
-"mega.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mMEGA DOWNLOAD") $dev";;
-"Crear-Demo.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mCREAR USUARIO TEMPORAL") $dev";;
-"real-host.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mHOST EXTRACTOR") $dev";;
-"squidpass.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mPROTECCION DE SQUID PASS") $dev";;
+"GENERADOR_BIN.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mGENERADOR DE BIN") $dev";;
+"ddos.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mANTI DDOS") $dev";;
+"statusdesistema.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "\e[40;38;5;82mINFORMACION: (NLOAD/HTOP/STATUSVPS/NETTOOLS) $dev";;
+"optimizar.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mOPTIMIZAR SERVIDOR") $dev";;
+"panelsshplus.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mPANEL DE VENTAS SSHPLUS") $dev";;
+"gestor.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mADMINISTRADOR VPS") $dev";;
+"proxy_manager.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mPROXY MANAGER") \033[1;33m(\033[1;37mBETA-TESTER\033[1;33m) $dev";;
+"socks_manager.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mPROXY MANAGER 2") \033[1;33m(\033[1;37mBETA-TESTER\033[1;33m) $dev";;
+"toolsdownloadmanager.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mTOOLS DOWNLOAD MANAGER") $dev";;
+"mega.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mMEGA DOWNLOAD") $dev";;
+"Crear-Demo.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mCREAR USUARIO TEMPORAL") $dev";;
+"real-host.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mHOST EXTRACTOR") $dev";;
+"squidpass.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mPROTECCION DE SQUID PASS") $dev";;
 # Menu Instalação Ger-tools DEV
-"nload.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mTRAFICO DE RED NLOAD") $dev";;
-"htop.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mPROCESOS DEL SISTEMA HTOP") $dev";;
-"visorpuertos.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mESTADISTICAS DEL SISTEMA") $dev";;
-"nettools")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[30;48;5;82mNET TOOLS TARGET") $dev";;
+"nload.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mTRAFICO DE RED NLOAD") $dev";;
+"htop.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mPROCESOS DEL SISTEMA HTOP") $dev";;
+"visorpuertos.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mESTADISTICAS DEL SISTEMA") $dev";;
+"nettools")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mNET TOOLS TARGET") $dev";;
 # Menu Instalação Ger-Inst OFC
 "openssh.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -azu "OPENSSH $(pid_inst sshd)";;
 "dropbear.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -azu "DROPBEAR $(pid_inst dropbear)";;
@@ -563,10 +563,10 @@ float_data "$arqs" "$Numb" && {
   let Numb++
   }
 done
-echo -ne "$(msg -verd "[$Numb]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "DETALLES DEL SISTEMA") $ofc"
+echo -ne "$(msg -verd "[$Numb]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mDETALLES DEL SISTEMA") $ofc"
 script[$Numb]="systeminf"
 let Numb++
-echo -ne "$(msg -verd "[$Numb]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "LIMPIAR CACHE DEL SISTEMA") $ofc"
+echo -ne "$(msg -verd "[$Numb]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mLIMPIAR CACHE DEL SISTEMA") $ofc"
 script[$Numb]="limpar"
 let Numb++
 echo -ne "$(msg -verd "[$Numb]") $(msg -verm2 ">") $(msg -ama "[!]") " && msg -verd "$(fun_trans "ADICCIONAR HERRAMIENTAS")"
