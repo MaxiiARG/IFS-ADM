@@ -501,8 +501,8 @@ case $1 in
 "ADMbot.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[208;38;5;82mBOT GENERADOR DE USUARIOS") TELEGRAM $ofc";;
 "apacheon.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mCOMPARTIR ARCHIVOS ONLINE") $ofc";;
 "ports.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[208;38;5;82mSISTEMA DE PUERTOS") $ofc";;
-"speed.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;11mTEST DE VELOCIDAD") $ofc";;
-"utils.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "\e[44mACTIVAR\e[0m: \e[40;38;5;82mBADVPN | TCPSPEED | SQUIDCACHE | TORRENT $ofc";;
+"speed.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mTEST DE VELOCIDAD") $ofc";;
+"utils.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "\e[44mACTIVAR\e[0m: BADVPN | TCPSPEED | SQUIDCACHE | TORRENT $ofc";;
 "MasterBin.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mCONSULTAR UN BIN") $ofc";;
 "payySND.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mPAYLOAD DE FUERZA BRUTA EN PYTHON*") $ofc";;
 # Menu Instalação Ger-Frm NO OFICIAL DEV
@@ -516,7 +516,7 @@ case $1 in
 # Menu Instalação Ger-Frm DEV
 "GENERADOR_BIN.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mGENERADOR DE BIN") $dev";;
 "ddos.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mANTI DDOS") $dev";;
-"statusdesistema.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "\e[220mINFORMACION\e[0m: (NLOAD/HTOP/STATUSVPS/NETTOOLS) $dev";;
+"statusdesistema.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "\e[43mINFORMACION\e[0m: (NLOAD/HTOP/STATUSVPS/NETTOOLS) $dev";;
 "optimizar.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mOPTIMIZAR SERVIDOR") $dev";;
 "panelsshplus.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mPANEL DE VENTAS SSHPLUS") $dev";;
 "gestor.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 ">") " && msg -ama "$(fun_trans "\e[40;38;5;82mADMINISTRADOR VPS") $dev";;
