@@ -86,6 +86,7 @@ local LINGUAGE=$(cat ${SCPidioma})
 [[ $LINGUAGE = "pt" ]] && echo "$@" && return
 [[ ! -e /etc/texto-adm ]] && touch /etc/texto-adm
 source /etc/texto-adm
+if [[ -z "$(echo ${texto[$@]})" ]]; then
 if [[ `echo "$@" | grep -o '*'` = "*" ]]; then
 retorno="$(source trans -e bing -b pt:${LINGUAGE} "$@"|sed -e 's/[^a-z0-9 -]//ig'| awk '{print toupper($0)}' 2>/dev/null)"
 else
@@ -93,6 +94,7 @@ retorno="$(source trans -e bing -b pt:${LINGUAGE} "$@"|sed -e 's/[^a-z0-9 -]//ig
 fi
 echo "texto[$@]='$retorno'"  >> /etc/texto-adm
 echo "$retorno"
+else
 echo "${texto[$@]}"
 fi
 }
